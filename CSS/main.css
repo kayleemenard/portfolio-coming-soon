@@ -5,12 +5,12 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
 }
 
 *, *::before, *::after; {
@@ -22,9 +22,33 @@ body {
 	padding: 0;
 }
 
-.img-container {}
+
+/* BILLBOARD IMAGE/SLIDESHOW **************************************************/
+.billboard, .billboard div {
+	margin: 0 auto;
+	transform-origin: 50% 50%;
+	overflow: hidden;
+	width: 250px;
+	height: 250px;
+	}
+
+.billboard {
+	transform: rotate(45deg) translateY(0px);
+}
+	
+.billboard .img-container {
+	width: 355px;
+	height: 355px;
+	transform: rotate(-45deg) translateY(-75px);
+}
+
+.billboard .img-container img {
+	width: 100%;
+	height: auto;
+} 
 
 
+/* MAIN ***********************************************************************/
 .description {
 	margin: 0;
 	padding:0;
@@ -34,11 +58,25 @@ body {
 .links {
 	margin: auto;
 	width: 100%;
+
+	list-style: none;
 	text-align: center;
 }
 
+
+/* LINKS **********************************************************************/
 a {
+	display: inline-block;
+	float: left;
+
 	color: black;
-	text-decoration: none;
 	font-weight: bold;
+	text-decoration: none;
+
+	cursor: pointer;
+}
+
+a:hover {
+	color: grey;
+	font-size: 1.1250rem;
 }
