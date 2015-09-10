@@ -66,14 +66,15 @@ body {
 
 .links {
 	margin: auto;
-	width: 100%;
 
 	list-style: none;
 	text-align: center;
 }
 
+ul {
+	padding: 0;
+}
 
-/* LINKS **********************************************************************/
 a {
 	color: white;
 	font-weight: bold;
@@ -102,12 +103,6 @@ a:hover {
 		height: 300px;
 		margin: -75px;
 	}
-
-	ul {
-		display: inline-block;
-		float: center;
-	}
-
 } 
 
 @media only screen and (min-width: 38em) {}
