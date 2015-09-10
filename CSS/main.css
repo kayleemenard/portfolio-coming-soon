@@ -20,6 +20,8 @@ html {
 body {
 	margin: 0;
 	padding: 0;
+
+	background-color: black;
 }
 
 
@@ -53,12 +55,9 @@ body {
 
 
 /* MAIN ***********************************************************************/
-.primary {
-}
-
 .description {
-	margin: 0;
-	padding:0;
+	margin: -50px 0 0 0;
+	padding: 0;
 	width: 100%;
 
 	position: absolute;
@@ -76,7 +75,7 @@ body {
 
 /* LINKS **********************************************************************/
 a {
-	color: black;
+	color: white;
 	font-weight: bold;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -91,10 +90,23 @@ a:hover {
 
 /* MEDIA QUERIES **************************************************************/
 @media only screen and (min-width: 25em) {
-ul {
-	display: inline-block;
-	float: center;
-}
+	.description {
+		margin: -25px 0 0 0;
+	}
+	.img-container {
+		width: 150px;
+		height: 150px;
+	}
+	.img-slideshow {
+		width: 300px;
+		height: 300px;
+		margin: -75px;
+	}
+
+	ul {
+		display: inline-block;
+		float: center;
+	}
 
 } 
 
