@@ -16,3 +16,36 @@ html {
 *, *::before, *::after; {
 	box-sizing: inherit;
 }
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.img-container {
+	margin-top: -40vh;
+	margin-left: 12.5vw;
+
+	background-color: black;
+	background-image: url(../images/billboard.jpg);
+	background-repeat: no-repeat;
+
+
+	border-radius: 50%;
+	max-height: 75vh;
+	max-width: 75vw;
+	height: auto;
+	width: auto;
+}
+
+.description {
+	margin: 0;
+	padding:0;
+	width: 100%;
+}
+
+.links {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
