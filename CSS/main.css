@@ -35,10 +35,10 @@ body {
 	width: 75px;
 	height: 75px;
 	margin: 0 auto;
+	overflow: hidden;
 
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-	overflow: hidden;
 }
 .cycle-slideshow {
 	background-image: url(../images/billboard.jpg);
@@ -91,7 +91,7 @@ a:hover {
 }
 
 a:focus {
-	padding: 5pxs;
+	padding: 5px;
 	outline: 3px dotted yellow;
 }
 
