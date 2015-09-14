@@ -27,11 +27,12 @@ body {
 	background-color: black;
 }
 
-
 /* BILLBOARD IMAGE/SLIDESHOW **************************************************/
 .billboard {
 	margin-top: 15vh;
 	padding: 0;
+	position: fixed;
+	height: 50%;
 }
 
 .img-container {
@@ -45,7 +46,7 @@ body {
 }
 .cycle-slideshow {
 	background-image: url(../images/billboard.jpg);
-	background-position: center; 
+	background-position: center center; 
 	background-size: 100px auto;
 	background-repeat: no-repeat;
 
@@ -60,22 +61,44 @@ body {
 
 /* MAIN ***********************************************************************/
 .description {
-	margin: -50px 0 0 0;
+	margin: 0;
 	padding: 0;
 	width: 100%;
-
 	position: absolute;
-	top: 50vh;
+	top: 100px;
+
+	color: white;
+	font-family: 'Inconsolata', sans-serif;
+	text-align: center;
+}
+
+.name {
+	margin: 0;
+	font-size: 2.5rem;
+}
+
+.aka {
+	padding: 0 0 2rem 0;
+}
+
+.small-txt {
+	font-size: 0.75rem;
+}
+
+.blurb {
+	margin: 0;
+	padding-bottom: 1.75rem; 
+	font-size: 1rem;
+	line-height: 1.5rem;
 }
 
 .links {
-	margin: auto;
-
 	list-style: none;
 	text-align: center;
 }
 
 ul {
+	margin: 0 0 0.75rem 0;
 	padding: 0;
 }
 
@@ -96,6 +119,11 @@ a:hover {
 a:focus {
 	padding: 5px;
 	outline: 3px dotted yellow;
+}
+
+a:active {
+	color: yellow;
+	font-size: 1.1250rem;
 }
 
 /* MEDIA QUERIES **************************************************************/
