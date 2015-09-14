@@ -99,7 +99,9 @@ a:focus {
 }
 
 /* MEDIA QUERIES **************************************************************/
-@media only screen and (min-width: 25em) {
+@media only screen and (min-width: 25em) {}
+
+@media only screen and (min-width: 38em) {
 	.description {
 		margin: -25px 0 0 0;
 	}
@@ -112,9 +114,7 @@ a:focus {
 		height: 300px;
 		margin: -75px;
 	}
-} 
-
-@media only screen and (min-width: 38em) {}
+}
 
 @media only screen and (min-width: 60em) {}
 
