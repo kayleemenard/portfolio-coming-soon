@@ -29,42 +29,31 @@ body {
 
 /* BILLBOARD IMAGE/SLIDESHOW **************************************************/
 .billboard {
-	padding: 0;
 	position: relative;
-	height: 50%;
 }
 
 .img-container {
-	width: 75px;
-	height: 75px;
+	width: 100vw;
 	margin: 0 auto;
-
-	/* overflow: hidden; */
-
-	-webkit-transform: rotate(-45deg);
-	transform: rotate(-45deg);
 }
+
 .cycle-slideshow {
-	margin: 0 auto;
+	background: url(../images/billboard.jpg) center center no-repeat;
+	background-size: cover;
+	height: 200px;
 
-	background-image: url(../images/billboard.jpg);
-	background-position: center center; 
-	background-size: 100px auto;
-	background-repeat: no-repeat;
+	width: 100vw;
+}
 
-	width: 100px;
-	height: 100px;
-
-
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
+.cycle-slideshow img {
+	margin: 0;
 }
 
 
 /* MAIN ***********************************************************************/
 .description {
 	margin: 0;
-	padding: 0;
+	padding: 0 0 2rem 0;
 	width: 100%;
 	position: absolute;
 	top: 300px;
@@ -133,13 +122,9 @@ a:active {
 	.description {
 		margin: -25px 0 0 0;
 	}
-	.img-container {
-		width: 200px;
-		height: 200px;
-	}
+
 	.cycle-slideshow {
-		width: 300px;
-		max-height: auto;	
+		height: 300px;	
 	}
 } 
 
