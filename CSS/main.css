@@ -30,33 +30,25 @@ body {
 /* BILLBOARD IMAGE/SLIDESHOW **************************************************/
 .billboard {
 	position: relative;
-}
-
-.img-container {
-	width: 100vw;
-	margin: 0 auto;
-}
-
-.cycle-slideshow {
-	background: url(../images/billboard.jpg) center center no-repeat;
-	background-size: cover;
-	height: 200px;
-
-	width: 100vw;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	max-height: 100px;
 }
 
 .cycle-slideshow img {
-	margin: 0;
+	margin-top: -5%;
+	height: auto;
+	width: 100%;
+	transform-origin: center center;
 }
 
 
 /* MAIN ***********************************************************************/
 .description {
-	margin: 0;
-	padding: 0 0 2rem 0;
+	margin-top: 3rem;
 	width: 100%;
 	position: absolute;
-	top: 300px;
 
 	color: white;
 	font-family: 'Inconsolata', sans-serif;
@@ -119,16 +111,22 @@ a:active {
 
 /* MEDIA QUERIES **************************************************************/
 @media only screen and (min-width: 25em) {
-	.description {
-		margin: -25px 0 0 0;
+	.billboard {
+		max-height: 200px;
 	}
 
 	.cycle-slideshow {
-		height: 300px;	
+		margin-top: -10%;
+		height: auto;
+		width: 100vw;	
 	}
 } 
 
-@media only screen and (min-width: 38em) {}
+@media only screen and (min-width: 38em) {
+	.billboard {
+		max-height: 300px;
+	}
+}
 
 @media only screen and (min-width: 60em) {}
 
