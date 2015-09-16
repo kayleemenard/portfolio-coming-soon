@@ -112,7 +112,7 @@ a:active {
 /* MEDIA QUERIES **************************************************************/
 @media only screen and (min-width: 25em) {
 	.billboard {
-		max-height: 200px;
+		max-height: 250px;
 	}
 
 	.cycle-slideshow {
@@ -124,7 +124,7 @@ a:active {
 
 @media only screen and (min-width: 38em) {
 	.billboard {
-		max-height: 300px;
+		max-height: 325px;
 	}
 }
 
